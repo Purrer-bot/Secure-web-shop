@@ -1,0 +1,173 @@
+*{transition:.3s linear;}
+body {
+  margin: 0;
+  background: #000000;
+  font-family: cambria;
+  color: #fcf0e4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {flex: 1;}
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #272727;
+  color: #fcf0e4;
+  min-height: 150px;
+}
+.content-wrap {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+aside {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #272727;
+  margin-right: 10px;
+}
+footer {
+  padding: 20px;
+  background: #272727;
+}
+a{
+	color:#f4cec2;
+}
+a:visited{
+	color:#f4cec2;
+}
+
+
+@media (min-width:768px) {
+  .main-content {display: flex;}
+  .content-wrap {
+    width: calc(100% - 200px);
+    margin-right: 10px;
+  }
+  aside {width: 200px;}
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+}
+.product-card:hover{
+  box-shadow: 0 0 5px #f4cec2;
+}
+.product-image img {
+  max-width: 95%;
+}
+
+
+.product-info {
+  margin-top: auto;
+}
+/* Кнопка покупки */
+.buy-button{
+	background-color:#f4cec2;
+	border: none;
+	margin-top:2%;
+	/* padding:2px; */
+}
+
+/* Подробная информация о товаре */
+.product-info.product-info-page {
+	max-width: 45%;
+	margin-top:0;
+}
+.product-image.product-info-image {
+	max-width: 45%;
+	margin-top:0;
+}
+/* Корзина */
+.cart{
+	 color: #fcf0e4;
+	 font-size:24px;
+	 background-color:#f4cec2;
+	 position:fixed;
+	 top:10%;
+	 right:0%;
+	 padding:10px;
+}
+/* .reg{
+	 color: #272727;
+	 font-size:24px;
+	 background-color:#f4cec2;
+	 position:fixed;
+	 top:30%;
+	 right:0%;
+	 padding:10px;
+}
+.reg a{
+  color:#272727;
+}
+.reg a:visited{
+  color:#272727;
+} */
+.cart a{
+	color:#272727;
+}
+.cart a:visited:{
+	color:#272727;
+}
+.product-info.cart-info-page {
+	max-width: 20%;
+	margin-top:0;
+}
+.product-image.cart-info-image {
+	max-width: 20%;
+	margin-top:0;
+}
+hr{
+	background-color: #272727;
+	height: 3px;
+	border:none;
+}
+.bottom-cart{
+	 display: flex;
+	flex-wrap: wrap;
+	flex-direction:column;
+}
+aside li{
+  list-style-type:none;
+  margin-left:5%;
+  padding:2%;
+}
+.g-key{
+  width:40px;
+  height: 40px;
+  background: #fff;
+  margin:3px;
+  display:inline-block;
+}
+.g-key:hover{
+  box-shadow: 0 0 5px #f4cec2;
+}
+.key-wrapper{
+  width: 250px;
+  min-height: 250px;
+}
+.get-pass, .clear-pass{
+  width: 250px;
+  background: #0000ff;
+}
+.add-commentary{
+  margin-top:10px;
+}
+/* .submit{
+  float:right;
+} */
